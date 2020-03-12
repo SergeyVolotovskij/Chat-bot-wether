@@ -28,7 +28,7 @@ bot = telebot.TeleBot('932525918:AAGDj4LRNCBi0hFo59vclpgYdavF4_vuxEU')
 
 @bot.message_handler(content_types=['text'])
 def send_welcome(message):
-	bot.send_message(message.chat.id,"Доброго времени суток Сергей Николаевич!" +"\nВ городе сейчас: " + w.get_detailed_status() + "\nТекущая температура в Минске составляет: " + str(temp)+ " C0." + " \nСкорость ветра составляет: " + str(speed) + " м/с" + )
+	bot.send_message(message.chat.id,"Доброго времени суток Сергей Николаевич!" +"\nВ городе сейчас: " + w.get_detailed_status() + "\nТекущая температура в Минске составляет: " + str(temp)+ " C0." + " \nСкорость ветра составляет: " + str(speed) + " м/с")
 bot.polling(none_stop = True)
 
 
